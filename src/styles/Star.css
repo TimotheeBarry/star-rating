@@ -1,0 +1,47 @@
+@import "~@fontsource/montserrat/index.css";
+
+.star {
+    height: 50px;
+    width: 50px;
+    transition: transform 0.08s ease-in-out;
+   
+}
+
+
+.clickable{
+    cursor: pointer;
+}
+
+.clickable:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.rating-row-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+    margin: 1rem;
+    transition: opacity .3s ease-out;
+}
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.rating-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+}
+
+
+.rating-row-title {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    align-self: start;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
